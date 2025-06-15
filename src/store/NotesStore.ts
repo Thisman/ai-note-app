@@ -22,9 +22,14 @@ export class NotesStore {
     if (data) {
       try {
         const parsed: Note[] = JSON.parse(data)
+        parsed.sort(
+          (a, b) =>
+            new Date(b.created_at).getTime() -
+            new Date(a.created_at).getTime(),
+        )
         runInAction(() => {
           this.notes = parsed
-          this.selectedId = parsed[parsed.length - 1]?.id ?? null
+          this.selectedId = parsed[0]?.id ?? null
         })
       } catch {
         // ignore invalid data
@@ -48,7 +53,7 @@ export class NotesStore {
       updated_at: now,
       archived: false,
     }
-    this.notes.push(note)
+    this.notes.unshift(note)
     this.selectedId = note.id
     this.save()
   }
