@@ -1,3 +1,4 @@
+// Text editor for the currently selected note
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect } from 'react'
 import { notesStore } from '../store/NotesStore'

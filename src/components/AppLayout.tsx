@@ -1,3 +1,4 @@
+// Main application layout with notes list and editor
 import { observer } from 'mobx-react-lite'
 import { NotesList } from './NotesList'
 import { NoteEditor } from './NoteEditor'
@@ -18,11 +19,12 @@ export const AppLayout = observer(() => {
 
   return (
     <div className={styles.container}>
-      <NotesList />
+      <NotesList onCreate={handleCreate} />
       <NoteEditor />
       <div className={styles.footer}>
-        <button onClick={handleCreate}>Создать</button>
-        <button onClick={handleDelete}>Удалить</button>
+        <button className={`${styles.button} ${styles.deleteButton}`} onClick={handleDelete}>
+          Удалить
+        </button>
       </div>
     </div>
   )
