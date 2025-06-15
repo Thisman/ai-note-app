@@ -62,6 +62,7 @@
 .createButton {
   background-color: #4caf50;
   color: #fff;
+  width: 100%;
 }
 
 .deleteButton {
