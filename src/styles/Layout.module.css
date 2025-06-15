@@ -41,3 +41,38 @@
   font-weight: bold;
   padding: 0.5rem;
 }
+
+/* Action bar above the notes list */
+.actionBar {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Generic button styling */
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.createButton {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Note title truncated with ellipsis */
+.noteTitle {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
