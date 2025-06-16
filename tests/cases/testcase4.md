@@ -1,9 +1,9 @@
-# Test Case 4: Update note content
+# Сценарий 4: обновление содержимого заметки
 
-## Steps
-1. Create `NotesStore` and add one note.
-2. Call `updateContent(id, 'text')`.
+## Шаги
+1. Создать `NotesStore` и добавить одну заметку.
+2. Вызвать `updateContent(id, 'text')`.
 
-## Expected
-- Note content updated to 'text'.
-- `updated_at` changed (not equal to `created_at`).
+## Ожидание
+- Содержимое заметки обновлено на 'text'.
+- `updated_at` изменилось и не равно `created_at`.

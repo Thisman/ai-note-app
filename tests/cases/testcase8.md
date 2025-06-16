@@ -1,9 +1,9 @@
-# Test Case 8: Editing note updates store
+# Сценарий 8: изменение заметки обновляет хранилище
 
-## Steps
-1. Render `NoteEditor` with selected note.
-2. Change textarea value.
-3. Wait debounce delay.
+## Шаги
+1. Отобразить `NoteEditor` с выбранной заметкой.
+2. Изменить значение текстового поля.
+3. Дождаться задержки debounce.
 
-## Expected
-- `notesStore.updateContent` called with new value.
+## Ожидание
+- `notesStore.updateContent` вызывается с новым значением.

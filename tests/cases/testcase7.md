@@ -1,8 +1,8 @@
-# Test Case 7: Delete note through layout
+# Сценарий 7: удаление заметки через макет
 
-## Steps
-1. Render `AppLayout` with store containing one note.
-2. Click delete button and confirm.
+## Шаги
+1. Отобразить `AppLayout` с одной заметкой в хранилище.
+2. Нажать кнопку удаления и подтвердить действие.
 
-## Expected
-- `notesStore.delete` invoked for selected note.
+## Ожидание
+- Метод `notesStore.delete` вызывается для выбранной заметки.

@@ -1,9 +1,9 @@
-# Test Case 2: Load from existing storage
+# Сценарий 2: загрузка из существующего хранилища
 
-## Steps
-1. Store two notes in LocalStorage with different `created_at` timestamps.
-2. Create `NotesStore` instance.
+## Шаги
+1. Сохранить две заметки в LocalStorage с разными значениями `created_at`.
+2. Создать экземпляр `NotesStore`.
 
-## Expected
-- `notes` sorted by `created_at` descending.
-- `selectedId` is id of the most recent note.
+## Ожидание
+- `notes` отсортированы по `created_at` по убыванию.
+- `selectedId` равен id самой новой заметки.

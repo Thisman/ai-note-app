@@ -1,8 +1,8 @@
-# Test Case 6: Select note from list
+# Сценарий 6: выбор заметки из списка
 
-## Steps
-1. Render `NotesList` with store containing two notes.
-2. Click on second note title.
+## Шаги
+1. Отобразить `NotesList`, содержащий две заметки.
+2. Нажать на заголовок второй заметки.
 
-## Expected
-- `notesStore.selectedId` becomes id of clicked note.
+## Ожидание
+- `notesStore.selectedId` становится id выбранной заметки.

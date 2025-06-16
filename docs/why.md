@@ -1,1 +1,1 @@
-This project demonstrates a minimal note taking application with local storage.
+Этот проект демонстрирует минимальное приложение для заметок с использованием локального хранилища.

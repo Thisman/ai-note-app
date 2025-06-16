@@ -1,9 +1,9 @@
-# Test Case 5: Delete a note
+# Сценарий 5: удаление заметки
 
-## Steps
-1. Create store with two notes.
-2. Delete first note by id.
+## Шаги
+1. Создать хранилище с двумя заметками.
+2. Удалить первую заметку по id.
 
-## Expected
-- `notes` length decreased by one.
-- `selectedId` points to remaining note.
+## Ожидание
+- Длина `notes` уменьшилась на одну.
+- `selectedId` указывает на оставшуюся заметку.

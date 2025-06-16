@@ -1,9 +1,9 @@
-# Test Case 3: Creating a new note
+# Сценарий 3: создание новой заметки
 
-## Steps
-1. Instantiate `NotesStore` with empty storage.
-2. Call `create()`.
+## Шаги
+1. Создать `NotesStore` с пустым хранилищем.
+2. Вызвать `create()`.
 
-## Expected
-- New note added to start of `notes`.
-- `selectedId` updated to new note id.
+## Ожидание
+- Новая заметка добавляется в начало `notes`.
+- `selectedId` обновляется на id новой заметки.

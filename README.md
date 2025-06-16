@@ -1,22 +1,27 @@
 # AI Note App
 
-Minimal notes application built with React, MobX and TypeScript.
+Минимальное приложение для заметок на React, MobX и TypeScript.
 
-The sidebar contains a "Создать" button above the notes list. Action buttons are
-colored and slightly larger, and note titles are truncated to 20 characters with
-an ellipsis when necessary.
+Боковая панель содержит кнопку "Создать" над списком заметок. Кнопки действий выделены и немного крупнее, названия заметок обрезаются до 20 символов с многоточием при необходимости.
 
-## Development
+## Установка
 
 ```bash
 npm install
+```
+
+## Запуск локально
+
+```bash
 npm run dev
 ```
 
-## Build
+Приложение будет доступно на `http://localhost:5173`.
+
+## Сборка
 
 ```bash
 npm run build
 ```
 
-Notes are stored in `LocalStorage` under the key `notes`.
+Заметки сохраняются в `LocalStorage` под ключом `notes`.
