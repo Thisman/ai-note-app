@@ -42,6 +42,17 @@ describe('NotesStore', () => {
     vi.useRealTimers()
   })
 
+  it('highlights references to other note titles', () => {
+    const store = new NotesStore()
+    const firstId = store.selectedId as string
+    store.updateContent(firstId, 'First Note')
+    store.create()
+    const secondId = store.selectedId as string
+    store.updateContent(secondId, 'link to first note: first note')
+    const content = store.notes.find((n) => n.id === secondId)!.content
+    expect(content).toContain('<strong>first note</strong>')
+  })
+
   it('delete removes note and selects another', () => {
     const store = new NotesStore()
     store.create()

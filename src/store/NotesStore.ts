@@ -1,6 +1,7 @@
 import { makeAutoObservable, runInAction } from 'mobx'
 import type { Note } from '../types/note'
 import { v4 as uuidv4 } from 'uuid'
+import { highlightReferences } from '../utils/highlight'
 
 const STORAGE_KEY = 'notes'
 
@@ -61,7 +62,7 @@ export class NotesStore {
   updateContent(id: string, content: string) {
     const note = this.notes.find((n) => n.id === id)
     if (note) {
-      note.content = content
+      note.content = highlightReferences(content, this.notes, id)
       note.updated_at = new Date().toISOString()
       this.save()
     }
