@@ -24,7 +24,7 @@
   border-top: 1px solid #ccc;
   background: #f0f0f0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1rem;
 }
 
@@ -68,6 +68,7 @@
 .deleteButton {
   background-color: #f44336;
   color: #fff;
+  width: 100%;
 }
 
 /* Note title truncated with ellipsis */
