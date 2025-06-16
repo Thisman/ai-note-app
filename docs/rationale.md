@@ -1,1 +1,1 @@
-The code is organized into small modules with explicit types. MobX manages state and persists to LocalStorage for simplicity.
+Код организован в небольшие модули с явными типами. MobX управляет состоянием и сохраняет его в LocalStorage для простоты.

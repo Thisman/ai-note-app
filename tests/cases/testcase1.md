@@ -1,9 +1,9 @@
-# Test Case 1: Initial load with empty storage
+# Сценарий 1: начальная загрузка при пустом хранилище
 
-## Steps
-1. Clear LocalStorage.
-2. Create `NotesStore` instance.
+## Шаги
+1. Очистить LocalStorage.
+2. Создать экземпляр `NotesStore`.
 
-## Expected
-- `notes` contains exactly one note.
-- `selectedId` equals the new note's id.
+## Ожидание
+- `notes` содержит ровно одну заметку.
+- `selectedId` равен id новой заметки.
