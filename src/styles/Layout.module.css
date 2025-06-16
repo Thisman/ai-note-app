@@ -28,6 +28,12 @@
   gap: 1rem;
 }
 
+.lastSaved {
+  color: #666;
+  font-size: 0.9rem;
+  align-self: center;
+}
+
 .noteItem {
   padding: 0.5rem;
   cursor: pointer;
@@ -59,13 +65,11 @@
   cursor: pointer;
 }
 
-
 .createButton {
   background-color: #4caf50;
   color: #fff;
   width: 250px;
 }
-
 
 .deleteButton {
   background-color: #f44336;
